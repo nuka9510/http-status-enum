@@ -1,68 +1,68 @@
 import { Enum } from "@nuka9510/simple-enum";
 import StatusType from "./status_type.js";
 export default class HttpStatus extends Enum {
-    static #CONTINUE = new HttpStatus(100, StatusType.INFORMATION);
-    static #SWITCHING_PROTOCOL = new HttpStatus(101, StatusType.INFORMATION);
-    static #PROCESSING = new HttpStatus(102, StatusType.INFORMATION);
-    static #EARLY_HINTS = new HttpStatus(103, StatusType.INFORMATION);
-    static #OK = new HttpStatus(200, StatusType.SUCCESSFUL);
-    static #CREATED = new HttpStatus(201, StatusType.SUCCESSFUL);
-    static #ACCEPTED = new HttpStatus(202, StatusType.SUCCESSFUL);
-    static #NON_AUTHORITATIVE_INFORMATION = new HttpStatus(203, StatusType.SUCCESSFUL);
-    static #NO_CONTENT = new HttpStatus(204, StatusType.SUCCESSFUL);
-    static #RESET_CONTENT = new HttpStatus(205, StatusType.SUCCESSFUL);
-    static #PARTIAL_CONTENT = new HttpStatus(206, StatusType.SUCCESSFUL);
-    static #MULTI_STATUS = new HttpStatus(207, StatusType.SUCCESSFUL);
-    static #ALREADY_REPORTED = new HttpStatus(208, StatusType.SUCCESSFUL);
-    static #IM_USED = new HttpStatus(226, StatusType.SUCCESSFUL);
-    static #MULTIPLE_CHOICES = new HttpStatus(300, StatusType.REDIRECTION);
-    static #MOVED_PERMANENTLY = new HttpStatus(301, StatusType.REDIRECTION);
-    static #FOUND = new HttpStatus(302, StatusType.REDIRECTION);
-    static #SEE_OTHER = new HttpStatus(303, StatusType.REDIRECTION);
-    static #NOT_MODIFIED = new HttpStatus(304, StatusType.REDIRECTION);
-    static #USE_PROXY = new HttpStatus(305, StatusType.REDIRECTION);
-    static #UNUSED = new HttpStatus(306, StatusType.REDIRECTION);
-    static #TEMPORARY_REDIRECT = new HttpStatus(307, StatusType.REDIRECTION);
-    static #PERMANENT_REDIRECT = new HttpStatus(308, StatusType.REDIRECTION);
-    static #BAD_REQUEST = new HttpStatus(400, StatusType.CLIENT_ERROR);
-    static #UNAUTHORIZED = new HttpStatus(401, StatusType.CLIENT_ERROR);
-    static #PAYMENT_REQUIRED = new HttpStatus(402, StatusType.CLIENT_ERROR);
-    static #FORBIDDEN = new HttpStatus(403, StatusType.CLIENT_ERROR);
-    static #NOT_FOUND = new HttpStatus(404, StatusType.CLIENT_ERROR);
-    static #METHOD_NOT_ALLOWED = new HttpStatus(405, StatusType.CLIENT_ERROR);
-    static #NOT_ACCEPTABLE = new HttpStatus(406, StatusType.CLIENT_ERROR);
-    static #PROXY_AUTHENTICATION_REQUIRED = new HttpStatus(407, StatusType.CLIENT_ERROR);
-    static #REQUEST_TIMEOUT = new HttpStatus(408, StatusType.CLIENT_ERROR);
-    static #CONFLICT = new HttpStatus(409, StatusType.CLIENT_ERROR);
-    static #GONE = new HttpStatus(410, StatusType.CLIENT_ERROR);
-    static #LENGTH_REQUIRED = new HttpStatus(411, StatusType.CLIENT_ERROR);
-    static #PRECONDITION_FAILED = new HttpStatus(412, StatusType.CLIENT_ERROR);
-    static #CONTENT_TOO_LARGE = new HttpStatus(413, StatusType.CLIENT_ERROR);
-    static #URI_TOO_LONG = new HttpStatus(414, StatusType.CLIENT_ERROR);
-    static #UNSUPPORTED_MEDIA_TYPE = new HttpStatus(415, StatusType.CLIENT_ERROR);
-    static #RANGE_NOT_SATISFIABLE = new HttpStatus(416, StatusType.CLIENT_ERROR);
-    static #EXPECTATION_FAILED = new HttpStatus(417, StatusType.CLIENT_ERROR);
-    static #IM_A_TEAPOT = new HttpStatus(418, StatusType.CLIENT_ERROR);
-    static #MISDIRECTED_REQUEST = new HttpStatus(421, StatusType.CLIENT_ERROR);
-    static #UNPROCESSABLE_ENTITY = new HttpStatus(422, StatusType.CLIENT_ERROR);
-    static #LOCKED = new HttpStatus(423, StatusType.CLIENT_ERROR);
-    static #FAILED_DEPENDENCY = new HttpStatus(424, StatusType.CLIENT_ERROR);
-    static #UPGRADE_REQUIRED = new HttpStatus(426, StatusType.CLIENT_ERROR);
-    static #PRECONDITION_REQUIRED = new HttpStatus(428, StatusType.CLIENT_ERROR);
-    static #TOO_MANY_REQUESTS = new HttpStatus(429, StatusType.CLIENT_ERROR);
-    static #REQUEST_HEADER_FIELDS_TOO_LARGE = new HttpStatus(431, StatusType.CLIENT_ERROR);
-    static #UNAVAILABLE_FOR_LEGAL_REASONS = new HttpStatus(451, StatusType.CLIENT_ERROR);
-    static #INTERNAL_SERVER_ERROR = new HttpStatus(500, StatusType.SERVER_ERROR);
-    static #NOT_IMPLEMENTED = new HttpStatus(501, StatusType.SERVER_ERROR);
-    static #BAD_GATEWAY = new HttpStatus(502, StatusType.SERVER_ERROR);
-    static #SERVICE_UNAVAILABLE = new HttpStatus(503, StatusType.SERVER_ERROR);
-    static #GATEWAY_TIMEOUT = new HttpStatus(504, StatusType.SERVER_ERROR);
-    static #HTTP_VERSION_NOT_SUPPORTED = new HttpStatus(505, StatusType.SERVER_ERROR);
-    static #VARIANT_ALSO_NEGOTIATES = new HttpStatus(506, StatusType.SERVER_ERROR);
-    static #INSUFFICIENT_STORAGE = new HttpStatus(507, StatusType.SERVER_ERROR);
-    static #LOOP_DETECTED = new HttpStatus(508, StatusType.SERVER_ERROR);
-    static #NOT_EXTENDED = new HttpStatus(510, StatusType.SERVER_ERROR);
-    static #NETWORK_AUTHENTICATION_REQUIRED = new HttpStatus(511, StatusType.SERVER_ERROR);
+    static #CONTINUE = new HttpStatus(100, 'CONTINUE', StatusType.INFORMATION);
+    static #SWITCHING_PROTOCOL = new HttpStatus(101, 'SWITCHING_PROTOCOL', StatusType.INFORMATION);
+    static #PROCESSING = new HttpStatus(102, 'PROCESSING', StatusType.INFORMATION);
+    static #EARLY_HINTS = new HttpStatus(103, 'EARLY_HINTS', StatusType.INFORMATION);
+    static #OK = new HttpStatus(200, 'OK', StatusType.SUCCESSFUL);
+    static #CREATED = new HttpStatus(201, 'CREATED', StatusType.SUCCESSFUL);
+    static #ACCEPTED = new HttpStatus(202, 'ACCEPTED', StatusType.SUCCESSFUL);
+    static #NON_AUTHORITATIVE_INFORMATION = new HttpStatus(203, 'NON_AUTHORITATIVE_INFORMATION', StatusType.SUCCESSFUL);
+    static #NO_CONTENT = new HttpStatus(204, 'NO_CONTENT', StatusType.SUCCESSFUL);
+    static #RESET_CONTENT = new HttpStatus(205, 'RESET_CONTENT', StatusType.SUCCESSFUL);
+    static #PARTIAL_CONTENT = new HttpStatus(206, 'PARTIAL_CONTENT', StatusType.SUCCESSFUL);
+    static #MULTI_STATUS = new HttpStatus(207, 'MULTI_STATUS', StatusType.SUCCESSFUL);
+    static #ALREADY_REPORTED = new HttpStatus(208, 'ALREADY_REPORTED', StatusType.SUCCESSFUL);
+    static #IM_USED = new HttpStatus(226, 'IM_USED', StatusType.SUCCESSFUL);
+    static #MULTIPLE_CHOICES = new HttpStatus(300, 'MULTIPLE_CHOICES', StatusType.REDIRECTION);
+    static #MOVED_PERMANENTLY = new HttpStatus(301, 'MOVED_PERMANENTLY', StatusType.REDIRECTION);
+    static #FOUND = new HttpStatus(302, 'FOUND', StatusType.REDIRECTION);
+    static #SEE_OTHER = new HttpStatus(303, 'SEE_OTHER', StatusType.REDIRECTION);
+    static #NOT_MODIFIED = new HttpStatus(304, 'NOT_MODIFIED', StatusType.REDIRECTION);
+    static #USE_PROXY = new HttpStatus(305, 'USE_PROXY', StatusType.REDIRECTION);
+    static #UNUSED = new HttpStatus(306, 'UNUSED', StatusType.REDIRECTION);
+    static #TEMPORARY_REDIRECT = new HttpStatus(307, 'TEMPORARY_REDIRECT', StatusType.REDIRECTION);
+    static #PERMANENT_REDIRECT = new HttpStatus(308, 'PERMANENT_REDIRECT', StatusType.REDIRECTION);
+    static #BAD_REQUEST = new HttpStatus(400, 'BAD_REQUEST', StatusType.CLIENT_ERROR);
+    static #UNAUTHORIZED = new HttpStatus(401, 'UNAUTHORIZED', StatusType.CLIENT_ERROR);
+    static #PAYMENT_REQUIRED = new HttpStatus(402, 'PAYMENT_REQUIRED', StatusType.CLIENT_ERROR);
+    static #FORBIDDEN = new HttpStatus(403, 'FORBIDDEN', StatusType.CLIENT_ERROR);
+    static #NOT_FOUND = new HttpStatus(404, 'NOT_FOUND', StatusType.CLIENT_ERROR);
+    static #METHOD_NOT_ALLOWED = new HttpStatus(405, 'METHOD_NOT_ALLOWED', StatusType.CLIENT_ERROR);
+    static #NOT_ACCEPTABLE = new HttpStatus(406, 'NOT_ACCEPTABLE', StatusType.CLIENT_ERROR);
+    static #PROXY_AUTHENTICATION_REQUIRED = new HttpStatus(407, 'PROXY_AUTHENTICATION_REQUIRED', StatusType.CLIENT_ERROR);
+    static #REQUEST_TIMEOUT = new HttpStatus(408, 'REQUEST_TIMEOUT', StatusType.CLIENT_ERROR);
+    static #CONFLICT = new HttpStatus(409, 'CONFLICT', StatusType.CLIENT_ERROR);
+    static #GONE = new HttpStatus(410, 'GONE', StatusType.CLIENT_ERROR);
+    static #LENGTH_REQUIRED = new HttpStatus(411, 'LENGTH_REQUIRED', StatusType.CLIENT_ERROR);
+    static #PRECONDITION_FAILED = new HttpStatus(412, 'PRECONDITION_FAILED', StatusType.CLIENT_ERROR);
+    static #CONTENT_TOO_LARGE = new HttpStatus(413, 'CONTENT_TOO_LARGE', StatusType.CLIENT_ERROR);
+    static #URI_TOO_LONG = new HttpStatus(414, 'URI_TOO_LONG', StatusType.CLIENT_ERROR);
+    static #UNSUPPORTED_MEDIA_TYPE = new HttpStatus(415, 'UNSUPPORTED_MEDIA_TYPE', StatusType.CLIENT_ERROR);
+    static #RANGE_NOT_SATISFIABLE = new HttpStatus(416, 'RANGE_NOT_SATISFIABLE', StatusType.CLIENT_ERROR);
+    static #EXPECTATION_FAILED = new HttpStatus(417, 'EXPECTATION_FAILED', StatusType.CLIENT_ERROR);
+    static #IM_A_TEAPOT = new HttpStatus(418, 'IM_A_TEAPOT', StatusType.CLIENT_ERROR);
+    static #MISDIRECTED_REQUEST = new HttpStatus(421, 'MISDIRECTED_REQUEST', StatusType.CLIENT_ERROR);
+    static #UNPROCESSABLE_ENTITY = new HttpStatus(422, 'UNPROCESSABLE_ENTITY', StatusType.CLIENT_ERROR);
+    static #LOCKED = new HttpStatus(423, 'LOCKED', StatusType.CLIENT_ERROR);
+    static #FAILED_DEPENDENCY = new HttpStatus(424, 'FAILED_DEPENDENCY', StatusType.CLIENT_ERROR);
+    static #UPGRADE_REQUIRED = new HttpStatus(426, 'UPGRADE_REQUIRED', StatusType.CLIENT_ERROR);
+    static #PRECONDITION_REQUIRED = new HttpStatus(428, 'PRECONDITION_REQUIRED', StatusType.CLIENT_ERROR);
+    static #TOO_MANY_REQUESTS = new HttpStatus(429, 'TOO_MANY_REQUESTS', StatusType.CLIENT_ERROR);
+    static #REQUEST_HEADER_FIELDS_TOO_LARGE = new HttpStatus(431, 'REQUEST_HEADER_FIELDS_TOO_LARGE', StatusType.CLIENT_ERROR);
+    static #UNAVAILABLE_FOR_LEGAL_REASONS = new HttpStatus(451, 'UNAVAILABLE_FOR_LEGAL_REASONS', StatusType.CLIENT_ERROR);
+    static #INTERNAL_SERVER_ERROR = new HttpStatus(500, 'INTERNAL_SERVER_ERROR', StatusType.SERVER_ERROR);
+    static #NOT_IMPLEMENTED = new HttpStatus(501, 'NOT_IMPLEMENTED', StatusType.SERVER_ERROR);
+    static #BAD_GATEWAY = new HttpStatus(502, 'BAD_GATEWAY', StatusType.SERVER_ERROR);
+    static #SERVICE_UNAVAILABLE = new HttpStatus(503, 'SERVICE_UNAVAILABLE', StatusType.SERVER_ERROR);
+    static #GATEWAY_TIMEOUT = new HttpStatus(504, 'GATEWAY_TIMEOUT', StatusType.SERVER_ERROR);
+    static #HTTP_VERSION_NOT_SUPPORTED = new HttpStatus(505, 'HTTP_VERSION_NOT_SUPPORTED', StatusType.SERVER_ERROR);
+    static #VARIANT_ALSO_NEGOTIATES = new HttpStatus(506, 'VARIANT_ALSO_NEGOTIATES', StatusType.SERVER_ERROR);
+    static #INSUFFICIENT_STORAGE = new HttpStatus(507, 'INSUFFICIENT_STORAGE', StatusType.SERVER_ERROR);
+    static #LOOP_DETECTED = new HttpStatus(508, 'LOOP_DETECTED', StatusType.SERVER_ERROR);
+    static #NOT_EXTENDED = new HttpStatus(510, 'NOT_EXTENDED', StatusType.SERVER_ERROR);
+    static #NETWORK_AUTHENTICATION_REQUIRED = new HttpStatus(511, 'NETWORK_AUTHENTICATION_REQUIRED', StatusType.SERVER_ERROR);
     /**
      * {@link https://developer.mozilla.org/ko/docs/Web/HTTP/Reference/Status/100 100} `Continue`
      *
@@ -490,10 +490,13 @@ export default class HttpStatus extends Enum {
      * `511` 상태 코드는 클라이언트가 네트워크 액세스를 얻기 위해 인증을 받아야 할 필요가 있음을 나타냅니다.
      */
     static get NETWORK_AUTHENTICATION_REQUIRED() { return HttpStatus.#NETWORK_AUTHENTICATION_REQUIRED; }
+    #name;
     #type;
+    get name() { return this.#name; }
     get type() { return this.#type; }
-    constructor(value, type) {
+    constructor(value, name, type) {
         super(value);
+        this.#name = name;
         this.#type = type;
     }
 }

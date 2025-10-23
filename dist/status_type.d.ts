@@ -21,5 +21,6 @@ export default class StatusType extends Enum<string> {
      * 서버 에러 응답
      */
     static get SERVER_ERROR(): StatusType;
+    get name(): string;
     constructor(value: string);
 }

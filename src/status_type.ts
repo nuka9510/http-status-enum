@@ -36,6 +36,14 @@ export default class StatusType extends Enum<string> {
    */
   static get SERVER_ERROR(): StatusType { return StatusType.#SERVER_ERROR; }
 
-  constructor(value: string) { super(value); }
+  #name: string;
+
+  get name(): string { return this.#name; }
+
+  constructor(value: string) {
+    super(value);
+
+    this.#name = value;
+  }
 
 }

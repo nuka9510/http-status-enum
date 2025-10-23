@@ -429,6 +429,7 @@ export default class HttpStatus extends Enum<number> {
      * `511` 상태 코드는 클라이언트가 네트워크 액세스를 얻기 위해 인증을 받아야 할 필요가 있음을 나타냅니다.
      */
     static get NETWORK_AUTHENTICATION_REQUIRED(): HttpStatus;
+    get name(): string;
     get type(): StatusType;
-    constructor(value: number, type: StatusType);
+    constructor(value: number, name: string, type: StatusType);
 }

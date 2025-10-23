@@ -17,68 +17,68 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class HttpStatus extends _nuka9510_simple_enum__WEBPACK_IMPORTED_MODULE_0__.Enum {
-    static #CONTINUE = new HttpStatus(100, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].INFORMATION);
-    static #SWITCHING_PROTOCOL = new HttpStatus(101, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].INFORMATION);
-    static #PROCESSING = new HttpStatus(102, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].INFORMATION);
-    static #EARLY_HINTS = new HttpStatus(103, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].INFORMATION);
-    static #OK = new HttpStatus(200, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SUCCESSFUL);
-    static #CREATED = new HttpStatus(201, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SUCCESSFUL);
-    static #ACCEPTED = new HttpStatus(202, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SUCCESSFUL);
-    static #NON_AUTHORITATIVE_INFORMATION = new HttpStatus(203, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SUCCESSFUL);
-    static #NO_CONTENT = new HttpStatus(204, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SUCCESSFUL);
-    static #RESET_CONTENT = new HttpStatus(205, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SUCCESSFUL);
-    static #PARTIAL_CONTENT = new HttpStatus(206, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SUCCESSFUL);
-    static #MULTI_STATUS = new HttpStatus(207, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SUCCESSFUL);
-    static #ALREADY_REPORTED = new HttpStatus(208, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SUCCESSFUL);
-    static #IM_USED = new HttpStatus(226, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SUCCESSFUL);
-    static #MULTIPLE_CHOICES = new HttpStatus(300, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].REDIRECTION);
-    static #MOVED_PERMANENTLY = new HttpStatus(301, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].REDIRECTION);
-    static #FOUND = new HttpStatus(302, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].REDIRECTION);
-    static #SEE_OTHER = new HttpStatus(303, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].REDIRECTION);
-    static #NOT_MODIFIED = new HttpStatus(304, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].REDIRECTION);
-    static #USE_PROXY = new HttpStatus(305, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].REDIRECTION);
-    static #UNUSED = new HttpStatus(306, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].REDIRECTION);
-    static #TEMPORARY_REDIRECT = new HttpStatus(307, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].REDIRECTION);
-    static #PERMANENT_REDIRECT = new HttpStatus(308, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].REDIRECTION);
-    static #BAD_REQUEST = new HttpStatus(400, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #UNAUTHORIZED = new HttpStatus(401, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #PAYMENT_REQUIRED = new HttpStatus(402, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #FORBIDDEN = new HttpStatus(403, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #NOT_FOUND = new HttpStatus(404, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #METHOD_NOT_ALLOWED = new HttpStatus(405, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #NOT_ACCEPTABLE = new HttpStatus(406, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #PROXY_AUTHENTICATION_REQUIRED = new HttpStatus(407, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #REQUEST_TIMEOUT = new HttpStatus(408, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #CONFLICT = new HttpStatus(409, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #GONE = new HttpStatus(410, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #LENGTH_REQUIRED = new HttpStatus(411, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #PRECONDITION_FAILED = new HttpStatus(412, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #CONTENT_TOO_LARGE = new HttpStatus(413, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #URI_TOO_LONG = new HttpStatus(414, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #UNSUPPORTED_MEDIA_TYPE = new HttpStatus(415, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #RANGE_NOT_SATISFIABLE = new HttpStatus(416, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #EXPECTATION_FAILED = new HttpStatus(417, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #IM_A_TEAPOT = new HttpStatus(418, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #MISDIRECTED_REQUEST = new HttpStatus(421, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #UNPROCESSABLE_ENTITY = new HttpStatus(422, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #LOCKED = new HttpStatus(423, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #FAILED_DEPENDENCY = new HttpStatus(424, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #UPGRADE_REQUIRED = new HttpStatus(426, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #PRECONDITION_REQUIRED = new HttpStatus(428, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #TOO_MANY_REQUESTS = new HttpStatus(429, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #REQUEST_HEADER_FIELDS_TOO_LARGE = new HttpStatus(431, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #UNAVAILABLE_FOR_LEGAL_REASONS = new HttpStatus(451, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
-    static #INTERNAL_SERVER_ERROR = new HttpStatus(500, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SERVER_ERROR);
-    static #NOT_IMPLEMENTED = new HttpStatus(501, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SERVER_ERROR);
-    static #BAD_GATEWAY = new HttpStatus(502, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SERVER_ERROR);
-    static #SERVICE_UNAVAILABLE = new HttpStatus(503, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SERVER_ERROR);
-    static #GATEWAY_TIMEOUT = new HttpStatus(504, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SERVER_ERROR);
-    static #HTTP_VERSION_NOT_SUPPORTED = new HttpStatus(505, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SERVER_ERROR);
-    static #VARIANT_ALSO_NEGOTIATES = new HttpStatus(506, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SERVER_ERROR);
-    static #INSUFFICIENT_STORAGE = new HttpStatus(507, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SERVER_ERROR);
-    static #LOOP_DETECTED = new HttpStatus(508, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SERVER_ERROR);
-    static #NOT_EXTENDED = new HttpStatus(510, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SERVER_ERROR);
-    static #NETWORK_AUTHENTICATION_REQUIRED = new HttpStatus(511, _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SERVER_ERROR);
+    static #CONTINUE = new HttpStatus(100, 'CONTINUE', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].INFORMATION);
+    static #SWITCHING_PROTOCOL = new HttpStatus(101, 'SWITCHING_PROTOCOL', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].INFORMATION);
+    static #PROCESSING = new HttpStatus(102, 'PROCESSING', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].INFORMATION);
+    static #EARLY_HINTS = new HttpStatus(103, 'EARLY_HINTS', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].INFORMATION);
+    static #OK = new HttpStatus(200, 'OK', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SUCCESSFUL);
+    static #CREATED = new HttpStatus(201, 'CREATED', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SUCCESSFUL);
+    static #ACCEPTED = new HttpStatus(202, 'ACCEPTED', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SUCCESSFUL);
+    static #NON_AUTHORITATIVE_INFORMATION = new HttpStatus(203, 'NON_AUTHORITATIVE_INFORMATION', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SUCCESSFUL);
+    static #NO_CONTENT = new HttpStatus(204, 'NO_CONTENT', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SUCCESSFUL);
+    static #RESET_CONTENT = new HttpStatus(205, 'RESET_CONTENT', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SUCCESSFUL);
+    static #PARTIAL_CONTENT = new HttpStatus(206, 'PARTIAL_CONTENT', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SUCCESSFUL);
+    static #MULTI_STATUS = new HttpStatus(207, 'MULTI_STATUS', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SUCCESSFUL);
+    static #ALREADY_REPORTED = new HttpStatus(208, 'ALREADY_REPORTED', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SUCCESSFUL);
+    static #IM_USED = new HttpStatus(226, 'IM_USED', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SUCCESSFUL);
+    static #MULTIPLE_CHOICES = new HttpStatus(300, 'MULTIPLE_CHOICES', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].REDIRECTION);
+    static #MOVED_PERMANENTLY = new HttpStatus(301, 'MOVED_PERMANENTLY', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].REDIRECTION);
+    static #FOUND = new HttpStatus(302, 'FOUND', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].REDIRECTION);
+    static #SEE_OTHER = new HttpStatus(303, 'SEE_OTHER', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].REDIRECTION);
+    static #NOT_MODIFIED = new HttpStatus(304, 'NOT_MODIFIED', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].REDIRECTION);
+    static #USE_PROXY = new HttpStatus(305, 'USE_PROXY', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].REDIRECTION);
+    static #UNUSED = new HttpStatus(306, 'UNUSED', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].REDIRECTION);
+    static #TEMPORARY_REDIRECT = new HttpStatus(307, 'TEMPORARY_REDIRECT', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].REDIRECTION);
+    static #PERMANENT_REDIRECT = new HttpStatus(308, 'PERMANENT_REDIRECT', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].REDIRECTION);
+    static #BAD_REQUEST = new HttpStatus(400, 'BAD_REQUEST', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #UNAUTHORIZED = new HttpStatus(401, 'UNAUTHORIZED', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #PAYMENT_REQUIRED = new HttpStatus(402, 'PAYMENT_REQUIRED', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #FORBIDDEN = new HttpStatus(403, 'FORBIDDEN', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #NOT_FOUND = new HttpStatus(404, 'NOT_FOUND', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #METHOD_NOT_ALLOWED = new HttpStatus(405, 'METHOD_NOT_ALLOWED', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #NOT_ACCEPTABLE = new HttpStatus(406, 'NOT_ACCEPTABLE', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #PROXY_AUTHENTICATION_REQUIRED = new HttpStatus(407, 'PROXY_AUTHENTICATION_REQUIRED', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #REQUEST_TIMEOUT = new HttpStatus(408, 'REQUEST_TIMEOUT', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #CONFLICT = new HttpStatus(409, 'CONFLICT', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #GONE = new HttpStatus(410, 'GONE', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #LENGTH_REQUIRED = new HttpStatus(411, 'LENGTH_REQUIRED', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #PRECONDITION_FAILED = new HttpStatus(412, 'PRECONDITION_FAILED', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #CONTENT_TOO_LARGE = new HttpStatus(413, 'CONTENT_TOO_LARGE', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #URI_TOO_LONG = new HttpStatus(414, 'URI_TOO_LONG', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #UNSUPPORTED_MEDIA_TYPE = new HttpStatus(415, 'UNSUPPORTED_MEDIA_TYPE', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #RANGE_NOT_SATISFIABLE = new HttpStatus(416, 'RANGE_NOT_SATISFIABLE', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #EXPECTATION_FAILED = new HttpStatus(417, 'EXPECTATION_FAILED', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #IM_A_TEAPOT = new HttpStatus(418, 'IM_A_TEAPOT', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #MISDIRECTED_REQUEST = new HttpStatus(421, 'MISDIRECTED_REQUEST', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #UNPROCESSABLE_ENTITY = new HttpStatus(422, 'UNPROCESSABLE_ENTITY', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #LOCKED = new HttpStatus(423, 'LOCKED', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #FAILED_DEPENDENCY = new HttpStatus(424, 'FAILED_DEPENDENCY', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #UPGRADE_REQUIRED = new HttpStatus(426, 'UPGRADE_REQUIRED', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #PRECONDITION_REQUIRED = new HttpStatus(428, 'PRECONDITION_REQUIRED', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #TOO_MANY_REQUESTS = new HttpStatus(429, 'TOO_MANY_REQUESTS', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #REQUEST_HEADER_FIELDS_TOO_LARGE = new HttpStatus(431, 'REQUEST_HEADER_FIELDS_TOO_LARGE', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #UNAVAILABLE_FOR_LEGAL_REASONS = new HttpStatus(451, 'UNAVAILABLE_FOR_LEGAL_REASONS', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].CLIENT_ERROR);
+    static #INTERNAL_SERVER_ERROR = new HttpStatus(500, 'INTERNAL_SERVER_ERROR', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SERVER_ERROR);
+    static #NOT_IMPLEMENTED = new HttpStatus(501, 'NOT_IMPLEMENTED', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SERVER_ERROR);
+    static #BAD_GATEWAY = new HttpStatus(502, 'BAD_GATEWAY', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SERVER_ERROR);
+    static #SERVICE_UNAVAILABLE = new HttpStatus(503, 'SERVICE_UNAVAILABLE', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SERVER_ERROR);
+    static #GATEWAY_TIMEOUT = new HttpStatus(504, 'GATEWAY_TIMEOUT', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SERVER_ERROR);
+    static #HTTP_VERSION_NOT_SUPPORTED = new HttpStatus(505, 'HTTP_VERSION_NOT_SUPPORTED', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SERVER_ERROR);
+    static #VARIANT_ALSO_NEGOTIATES = new HttpStatus(506, 'VARIANT_ALSO_NEGOTIATES', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SERVER_ERROR);
+    static #INSUFFICIENT_STORAGE = new HttpStatus(507, 'INSUFFICIENT_STORAGE', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SERVER_ERROR);
+    static #LOOP_DETECTED = new HttpStatus(508, 'LOOP_DETECTED', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SERVER_ERROR);
+    static #NOT_EXTENDED = new HttpStatus(510, 'NOT_EXTENDED', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SERVER_ERROR);
+    static #NETWORK_AUTHENTICATION_REQUIRED = new HttpStatus(511, 'NETWORK_AUTHENTICATION_REQUIRED', _status_type_js__WEBPACK_IMPORTED_MODULE_1__["default"].SERVER_ERROR);
     /**
      * {@link https://developer.mozilla.org/ko/docs/Web/HTTP/Reference/Status/100 100} `Continue`
      *
@@ -506,10 +506,13 @@ class HttpStatus extends _nuka9510_simple_enum__WEBPACK_IMPORTED_MODULE_0__.Enum
      * `511` 상태 코드는 클라이언트가 네트워크 액세스를 얻기 위해 인증을 받아야 할 필요가 있음을 나타냅니다.
      */
     static get NETWORK_AUTHENTICATION_REQUIRED() { return HttpStatus.#NETWORK_AUTHENTICATION_REQUIRED; }
+    #name;
     #type;
+    get name() { return this.#name; }
     get type() { return this.#type; }
-    constructor(value, type) {
+    constructor(value, name, type) {
         super(value);
+        this.#name = name;
         this.#type = type;
     }
 }
@@ -555,7 +558,12 @@ class StatusType extends _nuka9510_simple_enum__WEBPACK_IMPORTED_MODULE_0__.Enum
      * 서버 에러 응답
      */
     static get SERVER_ERROR() { return StatusType.#SERVER_ERROR; }
-    constructor(value) { super(value); }
+    #name;
+    get name() { return this.#name; }
+    constructor(value) {
+        super(value);
+        this.#name = value;
+    }
 }
 
 
