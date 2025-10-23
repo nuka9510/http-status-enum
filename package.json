@@ -32,8 +32,7 @@
     "http-status-code",
     "module",
     "CommonJS",
-    "ES",
-    "Module",
+    "ES Module",
     "cjs",
     "esm"
   ],
