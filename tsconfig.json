@@ -10,7 +10,11 @@
     "target": "ESNext",
     "declaration": true,
     "declarationDir": "dist",
-    "outDir": "dist"
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@nuka9510/http-status-enum": ["src/index.ts"]
+    }
   },
   "include": [
     "src/index.ts"

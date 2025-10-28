@@ -9,8 +9,8 @@
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "target": "ESNext",
     "paths": {
-      "@nuka9510/http-status-enum": [ "../../dist/index.d.ts" ],
-      "@nuka9510/simple-enum": [ "../../node_modules/@nuka9510/simple-enum/dist/index.ts" ]
+      "@nuka9510/simple-enum": [ "../../node_modules/@nuka9510/simple-enum/dist/index.d.ts" ],
+      "@nuka9510/http-status-enum": [ "../../dist/index.d.ts" ]
     }
   }
 }
