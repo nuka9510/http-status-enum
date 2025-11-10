@@ -33,108 +33,65 @@
 [top-language]: https://img.shields.io/github/languages/top/nuka9510/http-status-enum
 
 ## Install
-```
+
+```shell
 npm i @nuka9510/http-status-enum
 ```
-```
+
+```html
 <script src="https://cdn.jsdelivr.net/npm/@nuka9510/http-status-enum/dist/js/index.min.js"> </script>
 ```
-```
+
+```html
 <script src="https://cdn.jsdelivr.net/npm/@nuka9510/http-status-enum@latest/dist/js/index.min.js"> </script>
 ```
-```
+
+```html
 <script src="https://cdn.jsdelivr.net/npm/@nuka9510/http-status-enum@<specific-version>/dist/js/index.min.js"> </script>
 ```
-```
+
+```html
 <script type="importmap">
   {
     "imports": { "@nuka9510/http-status-enum": "https://cdn.jsdelivr.net/npm/@nuka9510/http-status-enum/dist/esm/index.min.mjs" }
   }
 </script>
 ```
-```
+
+```html
 <script type="importmap">
   {
     "imports": { "@nuka9510/http-status-enum": "https://cdn.jsdelivr.net/npm/@nuka9510/http-status-enum@latest/dist/esm/index.min.mjs" }
   }
 </script>
 ```
-```
+
+```html
 <script type="importmap">
   {
     "imports": { "@nuka9510/http-status-enum": "https://cdn.jsdelivr.net/npm/@nuka9510/http-status-enum@<specific-version>/dist/esm/index.min.mjs" }
   }
 </script>
 ```
+
 ## Usage
+
 ### js
-```
+
+```js
 httpStatusEnum.HttpStatus;
 ```
-### mjs
-```
-import { HttpStatus } from "@nuka9510/http-status-enum";
 
-HttpStatus;
+### mjs
+
+```js
+import { HttpStatus } from "@nuka9510/http-status-enum";
 ```
+
 ### cjs
-```
+
+```js
 const httpStatusEnum = require('@nuka9510/http-status-enum');
 
 httpStatusEnum.HttpStatus;
-```
-### example
-```
-example
-├── data
-│  └── case_1.json
-├── js
-│  └── case_1.mjs
-└── view
-   └── case_1.html
-```
-- `js/case_1.mjs`
-```
-import { HttpStatus } from "@nuka9510/http-status-enum";
-
-const url = new URL('/example/data/case_1.json', location.origin);
-
-fetch(url).then((res) => {
-            /** @type {HttpStatus} */
-            const httpStatus = HttpStatus.valueOf(res.status);
-
-            if (httpStatus == HttpStatus.OK) {
-              return res.json();
-            } else {
-              throw new Error(res.status);
-            }
-          })
-          .then((json) => {
-            console.debug(json);
-          })
-          .catch((e) => {
-            /** @type {HttpStatus} */
-            const httpStatus = HttpStatus.valueOf(parseInt(e.message));
-
-            console.error(httpStatus.value, httpStatus.type.value);
-          });
-```
-- `view/case_1.html`
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-</body>
-<script type="importmap">
-  {
-    "imports": { "@nuka9510/http-status-enum": "https://cdn.jsdelivr.net/npm/@nuka9510/http-status-enum/dist/esm/index.min.mjs" }
-  }
-</script>
-<script src="../js/case_1.mjs" type="module"></script>
-</html>
 ```
